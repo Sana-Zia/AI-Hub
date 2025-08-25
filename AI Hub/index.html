@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Hub - The Future of Intelligence</title>
+  <style>
+   
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000d0a;
+      color: #e0ffe0;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    h1, h2, h3 { color: #00ff88; }
+    a { text-decoration: none; color: inherit; }
+
+    header {
+      background: #000;
+      padding: 1rem 3rem;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #00ff88;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #00ff88;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    nav a:hover {
+      color: #00ff88;
+      text-shadow: 0 0 10px #00ff88;
+    }
+
+    
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 100vh;
+      align-items: center;
+      padding: 6rem 3rem 3rem;
+      gap: 2rem;
+    }
+    .hero-text h1 {
+      font-size: 3rem;
+    }
+    .typing {
+      font-size: 1.5rem;
+      color: #aaffcc;
+      margin: 1rem 0;
+      min-height: 2rem;
+    }
+    .cta {
+      background: #00ff88;
+      color: #000;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+    .cta:hover {
+      box-shadow: 0 0 20px #00ff88;
+    }
+   
+   :root{
+      --hero-img-max: 520px;      
+    }
+
+   .hero .hero-img{
+      width: 100%;
+     max-width: var(--hero-img-max);
+     height: 500px;               
+     display: block;
+     object-fit: cover;         
+     object-position: center; 
+     border-radius: 12px;
+     box-shadow: 0 0 25px rgba(0,255,136,.4);
+     animation: float 3s ease-in-out infinite;
+     justify-self: center;
+    }
+
+
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0);}
+      50% { transform: translateY(-15px);}
+    }
+
+    /* Sections */
+    section { padding: 5rem 3rem; text-align: center; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: #001a12;
+      padding: 2rem;
+      border-radius: 10px;
+      border: 1px solid #00ff88;
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px #00ff88;
+    }
+
+    /* Pricing */
+    .price { font-size: 2rem; margin: 1rem 0; color: #00ff88; }
+
+    
+    .reviewer { margin-top: 1rem; font-style: italic; color: #aaffcc; }
+
+    /* Contact */
+    form {
+      display: grid;
+      gap: 1rem;
+      max-width: 500px;
+      margin: 2rem auto;
+    }
+    input, textarea {
+      padding: 0.8rem;
+      border: none;
+      border-radius: 6px;
+      background: #001a12;
+      color: #e0ffe0;
+      border: 1px solid #00ff88;
+    }
+    input:focus, textarea:focus {
+      outline: none;
+      box-shadow: 0 0 10px #00ff88;
+    }
+    button[type="submit"] {
+      background: #00ff88;
+      color: #000;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button[type="submit"]:hover {
+      box-shadow: 0 0 20px #00ff88;
+    }
+
+    
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #000;
+      color: #aaffcc;
+      border-top: 1px solid #00ff88;
+    }
+  </style>
+</head>
+<body>
+
+ 
+  <header>
+    <div class="logo">AI Hub</div>
+    <nav>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welcome to <span style="color:#00ff88">AI Hub</span></h1>
+      <div class="typing" id="typing"></div>
+      <p>The ultimate platform to power your business with cutting-edge Artificial Intelligence.</p>
+      <button class="cta">Get Started</button>
+    </div>
+    <div>
+    <img src="d:\intership\AI Hub\AI.jfif" 
+     alt="AI Illustration" class="hero-img">
+
+    </div>
+  </section>
+
+  
+  <section id="features">
+    <h2>Features</h2>
+    <div class="grid">
+      <div class="card"><h3>Automation</h3><p>Streamline workflows with smart automation that saves time and reduces errors.</p></div>
+      <div class="card"><h3>Insights</h3><p>Gain real-time insights with AI-driven analytics and data visualization.</p></div>
+      <div class="card"><h3>Security</h3><p>Protect your business with next-gen AI-powered cybersecurity tools.</p></div>
+      <div class="card"><h3>Collaboration</h3><p>Work smarter with AI-powered collaboration and virtual assistants.</p></div>
+      <div class="card"><h3>Scalability</h3><p>Scale your AI needs as your business grows, seamlessly and affordably.</p></div>
+    </div>
+  </section>
+
+  
+  <section id="reviews">
+    <h2>Reviews</h2>
+    <div class="grid">
+      <div class="card">
+        <p>“AI Hub transformed the way we operate. Our efficiency doubled in just 2 months.”</p>
+        <div class="reviewer">— Sarah K., CEO at TechWave</div>
+      </div>
+      <div class="card">
+        <p>“I love the simplicity and power of AI Hub. It's like having an AI team on demand.”</p>
+        <div class="reviewer">— Daniel R., Startup Founder</div>
+      </div>
+      <div class="card">
+        <p>“The security features are top-notch. AI Hub gave us peace of mind instantly.”</p>
+        <div class="reviewer">— Maria L., IT Manager</div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Starter</h3>
+        <p class="price">$19/mo</p>
+        <p>✔ Basic AI Tools</p>
+        <p>✔ Email Support</p>
+        <p>✔ 5GB Cloud Storage</p>
+      </div>
+      <div class="card">
+        <h3>Pro</h3>
+        <p class="price">$49/mo</p>
+        <p>✔ Advanced AI Tools</p>
+        <p>✔ Priority Support</p>
+        <p>✔ 50GB Cloud Storage</p>
+      </div>
+      <div class="card">
+        <h3>Enterprise</h3>
+        <p class="price">$99/mo</p>
+        <p>✔ Full AI Suite</p>
+        <p>✔ Dedicated Manager</p>
+        <p>✔ Unlimited Storage</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Get in touch with our team and let’s build the future together.</p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+ 
+  <footer>
+    <p>© 2025 AI Hub. All Rights Reserved.</p>
+  </footer>
+
+  
+  <script>
+    // Typing effect
+    const text = "Power your future with Artificial Intelligence.";
+    let i = 0;
+    function typing() {
+      if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typing, 80);
+      }
+    }
+    typing();
+
+    // Scroll reveal
+    const cards = document.querySelectorAll('.card');
+    window.addEventListener('scroll', () => {
+      cards.forEach(card => {
+        const rect = card.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 50) {
+          card.style.opacity = 1;
+          card.style.transform = "translateY(0)";
+        }
+      });
+    });
+    cards.forEach(card => {
+      card.style.opacity = 0;
+      card.style.transform = "translateY(30px)";
+      card.style.transition = "0.6s ease";
+    });
+  </script>
+</body>
+</html>
